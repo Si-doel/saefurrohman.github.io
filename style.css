@@ -1,0 +1,227 @@
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background-color: #248bc653;
+	color: #333;
+    
+}
+
+.container h1{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px auto;
+    color: #fdfeff;
+        
+}
+
+.container {
+    width: 400px;
+    border: 2px solid #000000;
+    border-radius:10px;
+    margin: 20px auto;
+    background-color: #1e1e1e;
+
+}
+
+.calculator {
+    display: flex; /*Menggunakan Flexbox */
+    flex-direction: row; /* Susunan konten secara horizontal */
+    align-items: center; /* Menyelaraskan konten secara vertikal */
+    width: 300px; /* Lebar keseluruhan kalkulator */
+    margin: 5px auto; /* Margin diatur secara otomatis di tengah */
+    border: 2px solid #999797;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+.display {
+    width: 30px; /*Lebar display */
+    margin-left: 10px; /* Margin kanan untuk memisahkan dengan elemen lain */
+    /* padding: 5px; */
+    font-size: 15px;
+    height: 30px;
+    text-align: center;
+        
+}
+
+.pangkat {
+    vertical-align: super; /* Mengatur simbol pangkat ke atas */
+    /* font-size: smaller; Mengurangi ukuran font supaya lebih kecil      */
+
+}
+
+
+.calculator p,
+.calculator label
+.operator{
+    flex: 1; /*Memastikan setiap elemen mengambil ruang yang sama */
+    margin-right: 5px;
+    margin-left: 10px;
+    font-size: 12px;
+    color: #fdfeff;
+
+}
+
+.box p {
+    font-size: 12px;
+    font-weight:normal;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    color: #fdfeff;
+            
+}
+
+.buttons {
+    display: grid;
+    width: 300px;
+    margin: 10px auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+
+}
+
+button {
+    font-size: 20px;
+    /* background: hsl(210, 25%, 95%); */
+    background: hsl(207, 19%, 61%); /* Change the background to a dark gray */
+    border: none;
+    padding-block-start: 1rem;
+    padding-block-end: 1rem;
+    padding-inline-end: 1.25rem;
+    padding-inline-start: 1.25rem;
+    cursor: pointer;
+    inline-size: 70px;
+    block-size: 70px;
+    border-radius: 40px;
+    margin: auto;
+
+}
+
+.enter{
+  grid-column: 4 / 4;
+  grid-row: 1 / span 4;
+  background-image: linear-gradient(#ed0e98, #fe5a2d);
+  height: 300px;
+  border: none;
+
+}
+
+
+
+button:hover {
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.315);
+    
+}
+
+button:active{
+    background-color:  #ed0e98;
+    font-weight: bold;
+
+}
+
+.jawaban{
+    width: 400px;
+    margin: auto;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding-left: 10px;
+    border: 1px, #ed0e98, dashed;
+    display:block;
+
+}
+
+
+.highlight {
+    color: red;
+    font-weight: bold;
+
+}
+
+.center-container, .left-container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-top: 20px; /* Tambahkan margin-top untuk memberikan jarak dari atas */
+    margin-bottom: 20px;
+}
+.center-container {
+    justify-content: center; /* Posisikan di tengah */
+}
+.left-container {
+    justify-content: flex-start; /* Posisikan di kiri */
+    padding-left: 10px; /* Sesuaikan sesuai kebutuhan */
+}
+.formula {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+}
+
+.rumus {
+    width: 300px;
+    height: 80px;
+    align-items: center;
+    border: 2px solid #000000;
+    border-radius:10px;
+    background-color: #ffffff;
+    padding-top: 15px;
+    padding-left: 10px;
+
+}
+    
+
+
+.numerator {
+    display: flex;
+    align-items: center;
+}
+.akar {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+.akar::before {
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0; 
+    border-top: 3px solid rgb(0, 0, 0); /* Garis atas */
+    margin-left: 27px;  */
+
+} 
+
+.underline-section {
+    border-bottom: 3px solid rgb(255, 0, 0); /* Garis bawah dengan warna merah */
+    display: flex;
+    align-items: center;
+    padding-bottom: 2px; 
+}
+.radical {
+    margin-top: -3px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 30px;
+}
+.denominator {
+    padding-top: 2px; 
+    text-align: center;
+    margin-left: 46px;
+
+}
+
+
+
+
+  
+
